@@ -31,7 +31,6 @@ class TranslationController extends BaseController
     {
         try {
             app(TranslationsManager::class)->export();
-            Artisan::call('build');
 
             return redirect()->route('ltu.translation.index')->with('notification', [
                 'type' => 'success',
