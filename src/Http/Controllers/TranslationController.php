@@ -6,6 +6,7 @@ use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Artisan;
 use Inertia\Inertia;
 use Inertia\Response;
 use Momentum\Modal\Modal;
@@ -30,6 +31,7 @@ class TranslationController extends BaseController
     {
         try {
             app(TranslationsManager::class)->export();
+            Artisan::call('build');
 
             return redirect()->route('ltu.translation.index')->with('notification', [
                 'type' => 'success',
