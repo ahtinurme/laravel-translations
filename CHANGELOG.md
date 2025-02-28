@@ -2,6 +2,50 @@
 
 All notable changes to `laravel-translations` will be documented in this file.
 
+## v1.2.1 - 2025-02-26
+
+### What's Changed
+
+* Allow import translations with same keys in different groups. by @caswd in https://github.com/MohmmedAshraf/laravel-translations/pull/155
+
+**Full Changelog**: https://github.com/MohmmedAshraf/laravel-translations/compare/1.2.0...1.2.1
+
+## v1.2.0 - 2025-02-06
+
+### What's Changed
+
+* Fix `JsonResource::withoutWrapping()` by @BrianHenryIE in https://github.com/MohmmedAshraf/laravel-translations/pull/144
+* Add `--no-overwrite` flag while importing by @lvdigitalaaank in https://github.com/MohmmedAshraf/laravel-translations/pull/148
+* Add `UnwrappedAnonymousResourceCollection` by @BrianHenryIE in https://github.com/MohmmedAshraf/laravel-translations/pull/149
+* Fix file names when publish by @SalemCode8 in https://github.com/MohmmedAshraf/laravel-translations/pull/132
+
+### New Contributors
+
+* @lvdigitalaaank made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/147
+* @BrianHenryIE made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/144
+* @SalemCode8 made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/132
+
+**Full Changelog**: https://github.com/MohmmedAshraf/laravel-translations/compare/1.1.9...1.2.0
+
+## v1.1.9 - 2024-12-22
+
+### What's Changed
+
+* various fixes by @adereksisusanto in https://github.com/MohmmedAshraf/laravel-translations/pull/117
+* Fixed scopeWithProgress to work with pg_sql by @lyalls-marc in https://github.com/MohmmedAshraf/laravel-translations/pull/134
+* sync uuid creation column with the new upgrade by @benounnas in https://github.com/MohmmedAshraf/laravel-translations/pull/130
+* Fix asset paths for non-root project setups by @vzambon in https://github.com/MohmmedAshraf/laravel-translations/pull/138
+* Use the schema of the selected database when running the 'ImportTramslationsCommand'. by @caswd in https://github.com/MohmmedAshraf/laravel-translations/pull/123
+
+### New Contributors
+
+* @lyalls-marc made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/134
+* @benounnas made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/130
+* @vzambon made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/138
+* @caswd made their first contribution in https://github.com/MohmmedAshraf/laravel-translations/pull/123
+
+**Full Changelog**: https://github.com/MohmmedAshraf/laravel-translations/compare/1.1.8...1.1.9
+
 ## v1.1.8 - 2024-05-12
 
 ### What's Changed
@@ -234,11 +278,17 @@ After months of thorough beta testing, presenting Version 1.0 of the package, lo
      
      
      
+     
+     
+     
      ```
    - Alternatively, manually uninstall using:
      
      ```bash
      composer remove outhebox/laravel-translations
+     
+     
+     
      
      
      
@@ -265,6 +315,9 @@ After months of thorough beta testing, presenting Version 1.0 of the package, lo
    
      ```bash
      composer require outhebox/laravel-translations
+   
+   
+   
    
    
    
