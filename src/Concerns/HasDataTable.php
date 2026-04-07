@@ -139,8 +139,8 @@ trait HasDataTable
         }
 
         $query = QueryBuilder::for($this->tableBaseQuery())
-            ->allowedFilters($allowedFilters)
-            ->allowedSorts($this->buildAllowedSorts())
+            ->allowedFilters(...$allowedFilters)
+            ->allowedSorts(...$this->buildAllowedSorts())
             ->defaultSort($this->resolveDefaultSort());
 
         if ($relations = $this->tableRelations()) {
@@ -332,7 +332,7 @@ trait HasDataTable
             });
 
             if ($descending) {
-                $sort->defaultDirection(SortDirection::DESCENDING);
+                $sort->defaultDirection(defined(SortDirection::class.'::DESCENDING') ? SortDirection::DESCENDING : SortDirection::Descending);
             }
 
             return $sort;

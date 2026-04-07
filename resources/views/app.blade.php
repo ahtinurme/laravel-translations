@@ -28,7 +28,7 @@
             }
         </style>
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title data-inertia>{{ config('app.name', 'Laravel') }}</title>
 
         @if (file_exists(public_path('hot-translations')))
             @php($hotUrl = trim(file_get_contents(public_path('hot-translations'))))
